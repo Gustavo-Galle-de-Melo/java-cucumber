@@ -18,58 +18,57 @@
 # Please visit Gherkin By Example at https://github.com/gherkin-by-example
 # if you need additional information or have any questions.
 @system
-Feature: Bee1007 CLI
+Feature: Bee1008 CLI
 
   Narrative:
 
   In order to avoid silly mistakes
-  As a math novice
-  I want to be told the difference between products of four numbers
+  As a employer
+  I want to be told the employee's number and salary that he/she will receive at end of the month, with two decimal places
 
   Scenario: Run program with input
 
     Given input is
 """
-5
+25
+100
+5.50
+"""
+    When program runs
+    Then output should be
+"""
+NUMBER = 25
+SALARY = U$ 550.00
+
+"""
+
+  Scenario: Run program with input
+
+    Given input is
+"""
+1
+200
+20.50
+"""
+    When program runs
+    Then output should be
+"""
+NUMBER = 1
+SALARY = U$ 4100.00
+
+"""
+
+  Scenario: Run program with input
+
+    Given input is
+"""
 6
-7
-8
+145
+15.55
 """
     When program runs
     Then output should be
 """
-DIFERENCA = -26
-
-"""
-
-  Scenario: Run program with input
-
-    Given input is
-"""
-0
-0
-7
-8
-"""
-    When program runs
-    Then output should be
-"""
-DIFERENCA = -56
-
-"""
-
-  Scenario: Run program with input
-
-    Given input is
-"""
-5
-6
--7
-8
-"""
-    When program runs
-    Then output should be
-"""
-DIFERENCA = 86
-
+NUMBER = 6
+SALARY = U$ 2254.75
 """
