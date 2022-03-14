@@ -10,8 +10,12 @@ public class Salary {
         int hours = in.nextInt();
         double amountPerHour = in.nextDouble();
         System.out.println("NUMBER = "+number);
-        System.out.printf("SALARY = %.2f\n", hours*amountPerHour);
+        System.out.printf("SALARY = %.2f\n", salary(hours, amountPerHour));
  
+    }
+
+    public static Double salary(int hours, double amountPerHour){
+        return hours*amountPerHour;
     }
  
 }
