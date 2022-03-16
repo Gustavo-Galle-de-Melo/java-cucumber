@@ -3,19 +3,28 @@ import java.io.IOException;
 import java.util.*;
  
 public class Salary {
- 
-    public static void main(String[] args) throws IOException {
-        Scanner in = new Scanner(System.in);
-        int number = in.nextInt();
-        int hours = in.nextInt();
-        double amountPerHour = in.nextDouble();
-        System.out.println("NUMBER = "+number);
-        System.out.printf("SALARY = %.2f\n", salary(hours, amountPerHour));
- 
+
+    private int number;
+    private int hours;
+    private double amountPerHour;
+
+    public void setNumber(int number){
+        this.number=number;
     }
 
-    public static Double salary(int hours, double amountPerHour){
+    public void setHours(int hours){
+        this.hours=hours;
+    }
+
+    public void setAmountPerHour(double amountPerHour){
+        this.amountPerHour=amountPerHour;
+    }
+
+    public int getNumber(){
+        return number;
+    }
+
+    public double getSalary(){
         return hours*amountPerHour;
     }
- 
 }
