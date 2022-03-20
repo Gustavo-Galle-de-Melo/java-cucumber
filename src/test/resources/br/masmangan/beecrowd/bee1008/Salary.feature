@@ -38,5 +38,5 @@ Scenario Outline: calculate average of three numbers
 Examples:
 |  number |  hours |  amount | salary |
 | 25 | 100 | 5.50 | 550.00 |
-| 25 | 100 | 5.50 | 550.00 |
-| 25 | 100 | 5.50 | 550.00 |
+| 1 | 200 | 20.50 | 4100.00 |
+| 6 | 145 | 15.55 | 2254.75 |
