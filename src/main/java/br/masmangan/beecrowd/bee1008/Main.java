@@ -23,7 +23,7 @@ public class Main {
 
         in.close();
 
-        out.println("NUMBER = "+salary.getNumber());
-        out.printf("SALARY = %.2f\n", salary.getSalary());
+        out.print("NUMBER = "+salary.getNumber()+"\n");
+        out.printf("SALARY = U$ %.2f\n", salary.getSalary());
     }
 }

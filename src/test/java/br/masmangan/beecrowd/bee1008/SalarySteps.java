@@ -30,6 +30,6 @@ public class SalarySteps {
     }
     @Then("result should be {double}")
     public void result_should_be(int expected) {
-        assertEquals(expected, actual);
+        assertEquals(expected, actual, 0);
     }
 }

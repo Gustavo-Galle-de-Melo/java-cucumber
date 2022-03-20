@@ -32,13 +32,13 @@ Feature: Bee1008 CLI
 """
 25
 100
-5.50
+5,50
 """
     When program runs
     Then output should be
 """
 NUMBER = 25
-SALARY = U$ 550.00
+SALARY = U$ 550,00
 
 """
 
@@ -48,13 +48,13 @@ SALARY = U$ 550.00
 """
 1
 200
-20.50
+20,50
 """
     When program runs
     Then output should be
 """
 NUMBER = 1
-SALARY = U$ 4100.00
+SALARY = U$ 4100,00
 
 """
 
@@ -64,11 +64,12 @@ SALARY = U$ 4100.00
 """
 6
 145
-15.55
+15,55
 """
     When program runs
     Then output should be
 """
 NUMBER = 6
-SALARY = U$ 2254.75
+SALARY = U$ 2254,75
+
 """

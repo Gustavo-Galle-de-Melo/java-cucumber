@@ -18,25 +18,25 @@
 # Please visit Gherkin By Example at https://github.com/gherkin-by-example 
 # if you need additional information or have any questions.
 @domain
-Feature: Product
+Feature: Salary
 
 Narrative:
 
 In order to avoid silly mistakes
-As a math novice
-I want to be told the difference between products of four numbers
+  As a employer
+  I want to be told the employee's number and salary that he/she will receive at end of the month, 
+  with two decimal places
 
 Scenario Outline: calculate average of three numbers
 
-  Given first number is <a>
-  And second number is <b>
-  And third number is <c>
-  And fourth number is <d>
-  When difference is calculated
-  Then result should be <difference>
+  the number is <number>
+  <hours> hours
+  U$ <amount> per hour
+  salary is calculated
+  result should be <salary>
 
 Examples:
-|  a |  b |  c | d | difference |
-| 5 | 6 | 7 | 8 | -26 |
-| 0 | 0 | 7 | 8 | -56 |
-| 5 | 6 | -7 | 8 | 86 |
+|  number |  hours |  amount | salary |
+| 25 | 100 | 5.50 | 550.00 |
+| 25 | 100 | 5.50 | 550.00 |
+| 25 | 100 | 5.50 | 550.00 |
