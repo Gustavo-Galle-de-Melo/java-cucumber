@@ -1,7 +1,5 @@
 package br.masmangan.beecrowd.bee1008;
-import java.io.IOException;
-import java.util.*;
- 
+
 public class Salary {
 
     private int number;
@@ -28,3 +26,4 @@ public class Salary {
         return hours*amountPerHour;
     }
 }
+

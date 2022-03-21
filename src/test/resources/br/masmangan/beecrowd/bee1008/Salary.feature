@@ -24,10 +24,10 @@ Narrative:
 
 In order to avoid silly mistakes
   As a employer
-  I want to be told the employee's number and salary that he/she will receive at end of the month, 
-  with two decimal places
+  I want to be told the employee's number and salary that
+  he/she will receive at end of the month, with two decimal places
 
-Scenario Outline: calculate average of three numbers
+Scenario Outline: Multiply two numbers
 
   the number is <number>
   <hours> hours
